@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'crypto/games/version'
+require 'crypto_games/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "crypto-games"
-  spec.version       = Crypto::Games::VERSION
+  spec.name          = "crypto_games"
+  spec.version       = CryptoGames::VERSION
   spec.authors       = ["Matt Duffy"]
   spec.email         = ["m.duffy12610@gmail.com"]
 
@@ -29,5 +29,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "minitest"
+  spec.add_development_dependency "rspec"
 end
